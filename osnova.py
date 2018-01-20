@@ -27,15 +27,6 @@ podatki = re.compile(
     flags=0 )
 
 
-#with open('imenik_knjig\\stran-1.html') as f:
-#    vsebina = f.read()
-
-#stevilo = 0
-#for ujemanje in re.finditer(podatki, vsebina):
-#    print(ujemanje.groupdict())
-#    stevilo += 1
-#print(stevilo)
-
 def shrani_strani(imenik, stevilo_strani=20):
     os.makedirs(imenik, exist_ok=True)
     for stevilka_strani in range(2, stevilo_strani + 1):
