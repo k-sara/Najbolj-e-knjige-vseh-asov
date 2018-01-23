@@ -5,10 +5,10 @@ Analiza podatkov iz seznama najboljših knjig vseh časov
 * id
 * naslov knjige
 * avtor knjige
-* ocene
-* povprecje
+* število ocen
+* povprecje vseh ocen
 * stevilo glasujocih
-* tocke, ki so odvisne od več faktorjev, med drugim od stevila glasujocih ljudi in njihove ocene
+* tocke, ki so odvisne od več faktorjev, med drugim od stevila glasujocih ljudi in njihovih ocen
 * jezik
 * leto objave ocenjene knjige
 * leto izdaje prve verzije ocenjene knjige
