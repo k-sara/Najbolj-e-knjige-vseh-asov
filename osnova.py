@@ -109,13 +109,13 @@ def preberi(imenik):
             if leto_objave == []:
                 leto_objave = None
             else:
-                leto_objave = leto_objave[0]
+                leto_objave = int(leto_objave[0])
                 
             leto_izdaje = re.findall(leto_izd, vsebina)
             if leto_izdaje == []:
                 leto_izdaje = None
             else:
-                leto_izdaje = leto_izdaje[0]
+                leto_izdaje = int(leto_izdaje[0])
                 
             novi_slovar = {'jezik' :  jezik,
                           'leto_objave' : leto_objave,
@@ -143,21 +143,21 @@ def zapisi_csv(podatki, polja, ime_datoteke):
             pisalec.writerow(podatek)
             
 #shrani_strani('imenik_knjig', 20)
-#seznam_knjig = preberi_knjige('imenik_knjig')
+seznam_knjig = preberi_knjige('imenik_knjig')
             
 #seznam_ref = preberi_reference('imenik_knjig')
 #shrani_stran_knjige('imenik_posameznih_knjig', seznam_ref)
 
-#novi_seznam = preberi('imenik_posameznih_knjig')
+novi_seznam = preberi('imenik_posameznih_knjig')
 
-#dopolnjeni_slovar = dopolni_slovar(seznam_knjig, novi_seznam)
+dopolnjeni_slovar = dopolni_slovar(seznam_knjig, novi_seznam)
             
 #zapis_json = zapisi_json(seznam_knjig, 'najboljse_knjige_vseh_casov.json')
 #zapis_json2 = zapisi_json(dopolnjeni_slovar, 'najboljse_knjige_vseh_casov2.json')
 
-#polja = ['id', 'naslov', 'avtor',
-#         'ocene', 'povprecje',
-#         'stevilo_glasujocih',
-#         'tocke', 'jezik', 'leto_objave',
-#         'leto_izdaje']
-#zapisi_csv(dopolnjeni_slovar, polja, 'najboljse_knjige_vseh_casov.csv')
+polja = ['id', 'naslov', 'avtor',
+         'ocene', 'povprecje',
+         'stevilo_glasujocih',
+         'tocke', 'jezik', 'leto_objave',
+         'leto_izdaje']
+zapisi_csv(dopolnjeni_slovar, polja, 'najboljse_knjige_vseh_casov.csv')
