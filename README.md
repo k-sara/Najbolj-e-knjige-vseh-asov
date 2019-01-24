@@ -1,5 +1,5 @@
 # Najboljse-knjige-vseh-casov
-Analiza 2000 knjig iz seznama najboljših knjig vseh časov, urejenega glede na zbrane točke, ki so predvsem odvisne od stevila glasujocih ljudi in nihovih ocen. Podatki so zbrani s strani [Goodreads](https://www.goodreads.com/list/show/1.Best_Books_Ever).
+Analiza 2000 knjig iz seznama najboljših knjig vseh časov, urejenega glede na zbrane točke, ki so predvsem odvisne od stevila glasujocih ljudi in njihovih ocen. Podatki so zbrani s strani [Goodreads](https://www.goodreads.com/list/show/1.Best_Books_Ever).
 
 ## Zbrani podatki:
 * id
